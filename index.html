@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Droguería EL RENACER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Navbar sin logo -->
+    <header class="fixed top-0 left-0 right-0 bg-blue-900 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+            <div>
+                <span class="text-white font-bold text-xl select-none">Droguería EL RENACER</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-white font-semibold">
+                <a href="#inicio" class="hover:text-yellow-400 transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-yellow-400 transition-colors">Servicios</a>
+                <a href="#productos" class="hover:text-yellow-400 transition-colors">Productos</a>
+                <a href="#contacto" class="hover:text-yellow-400 transition-colors">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20 bg-gradient-to-r from-blue-700 via-blue-900 to-blue-700 text-white min-h-[80vh] flex flex-col md:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-10">
+        <div class="flex-1 max-w-xl space-y-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Bienvenido a <span class="text-yellow-400">Droguería EL RENACER</span></h1>
+            <p class="text-lg text-blue-200">Tu salud es nuestra prioridad. Medicamentos, cuidado personal y mucho más con la confianza que necesitas.</p>
+            <a href="#productos" class="inline-block bg-yellow-400 text-blue-900 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-500 transition">Ver Productos</a>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <!-- Aquí puedes poner una imagen o dejar vacío -->
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-blue-900 mb-12 text-center">Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                <img src="images/medicamentos.jpg" alt="Medicamentos" class="w-full h-48 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Venta de Medicamentos</h3>
+                    <p class="text-gray-600">Medicamentos genéricos y de marca a los mejores precios.</p>
+                </div>
+            </article>
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                <img src="images/asesoria.jpg" alt="Asesoría Farmacéutica" class="w-full h-48 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Asesoría Farmacéutica</h3>
+                    <p class="text-gray-600">Orientación profesional sobre el uso adecuado de medicamentos.</p>
+                </div>
+            </article>
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer">
+                <img src="images/cuidado-personal.jpg" alt="Cuidado Personal" class="w-full h-48 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">Productos de Cuidado Personal</h3>
+                    <p class="text-gray-600">Cosméticos, suplementos y artículos de higiene personal.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="max-w-7xl mx-auto px-6 py-16 bg-gray-100 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-blue-900 mb-12 text-center">Productos Destacados</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer p-4">
+                <img src="images/alcohol.jpg" alt="Alcohol Antiséptico" class="w-full h-40 object-cover rounded-md mb-4" />
+                <h3 class="text-lg font-semibold text-blue-900 mb-2">Alcohol Antiséptico</h3>
+                <p class="text-yellow-500 font-bold">$8.000</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer p-4">
+                <img src="images/parcetamol.jpg" alt="Paracetamol 500mg" class="w-full h-40 object-cover rounded-md mb-4" />
+                <h3 class="text-lg font-semibold text-blue-900 mb-2">Paracetamol 500mg</h3>
+                <p class="text-yellow-500 font-bold">$5.000</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer p-4">
+                <img src="images/Vitamina-C.jpg" alt="Vitaminas C" class="w-full h-40 object-cover rounded-md mb-4" />
+                <h3 class="text-lg font-semibold text-blue-900 mb-2">Vitaminas C</h3>
+                <p class="text-yellow-500 font-bold">$12.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="max-w-7xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-8">Contáctanos</h2>
+        <p class="mb-3 text-gray-700 text-lg">📍 Carrera 7 #2-05 este, Facatativa, Barrio Arboleda</p>
+        <p class="mb-3 text-gray-700 text-lg">📞 +57 311 222 1160</p>
+        <p class="mb-3 text-gray-700 text-lg">✉️ info@drogueriaelrenacer.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 text-center font-semibold">
+        &copy; 2025 Droguería EL RENACER - Todos los derechos reservados
+    </footer>
+
+</body>
+</html>
